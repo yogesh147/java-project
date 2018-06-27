@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title>TODO supply a title</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </head>
+    <body>
+        <div>TODO write content</div>
+        <form name="dropdown">
+ <label>Search <u>E</u>ngines</label>
+ <select name="list" accesskey="E">
+ <option selected>Please select one</option>
+ <option value="http://search.msn.com/"><a href="#">MSN Search</a></option>
+ <option value="http://www.google.com/">Google</option>
+ <option value="http://www.search.com/">Search.com</option>
+ <option value="http://www.dogpile.com/">Dogpile</option>
+ <select>
+ <input type=button value="Go" onclick="goToNewPage(document.dropdown.list)">
+</form> 
+        <script>
+function goToNewPage(dropdownlist)
+ {
+ var url = dropdownlist.options(dropdownlist.selectedIndex).value;
+ if (url != "")
+ {
+ window.open(url);
+ }
+ }
+</script>
+    </body>
+</html>

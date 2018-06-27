@@ -1,0 +1,226 @@
+ul.resp-tabs-list, p {
+    margin: 0px;
+    padding: 0px;
+}
+
+.resp-tabs-list li {
+    font-weight: 400;
+    font-size: 17px;
+    display: inline-block;
+    padding: 13px 15px;
+    margin: 0 4px 0 0;
+    list-style: none;
+    cursor: pointer;
+    float: left;
+	font-family: 'Ubuntu Condensed', sans-serif;
+}
+
+.resp-tabs-container {
+    padding: 0px;
+    background-color: #fff;
+    clear: left;
+}
+
+h2.resp-accordion {
+    cursor: pointer;
+    padding: 5px;
+    display: none;
+}
+
+.resp-tab-content {
+    display: none;
+    padding: 15px;
+}
+
+.resp-tab-active {
+	//border: 1px solid #5AB1D0;
+	border-bottom: none;
+	margin-bottom: -1px;
+	padding: 12px 14px 14px 14px;
+	//border-bottom: 0px #fff solid ;
+	//border-top: 4px solid #709DCA ;
+}
+
+.resp-tab-active {
+    border-bottom: none;
+    background-color: #fff;
+}
+
+.resp-content-active, .resp-accordion-active {
+    display: block;
+}
+
+.resp-tab-content {
+    border: 1px solid #c1c1c1;
+	border-top-color: #5AB1D0;
+}
+
+h2.resp-accordion {
+    font-size: 13px;
+    border: 1px solid #c1c1c1;
+    border-top: 0px solid #c1c1c1;
+    margin: 0px;
+    padding: 10px 15px;
+}
+
+h2.resp-tab-active {
+    border-bottom: 0px solid #c1c1c1 ;
+    margin-bottom: 0px ;
+    padding: 10px 15px ;
+}
+
+h2.resp-tab-title:last-child {
+    border-bottom: 12px solid #c1c1c1 ;
+    background: blue;
+}
+
+/*-----------Vertical tabs-----------*/
+.resp-vtabs ul.resp-tabs-list {
+    float: left;
+    width: 30%;
+	margin-top: 0;
+	min-height: 831px;
+}
+
+.resp-vtabs .resp-tabs-list li {
+    display: block;
+    padding: 15px 15px ;
+    margin: 0 0 4px;
+    //cursor: pointer;
+    float: none;
+    //border: 1px solid #F5F5F5;
+    border-color: rgb(245, 245, 245);
+	border-left: 4px solid #F5F5F5 ;
+	    background-color: rgb(249, 249, 249);
+}
+
+.resp-vtabs .resp-tabs-container {
+    padding: 0px;
+    background-color: #fff;
+    border: none;
+    float: left;
+    width: 70%;
+    //border: 1px solid #CCCCCC ;
+    border-radius: 0;
+    clear: none;
+	min-height: 831px;
+}
+
+.resp-vtabs .resp-tab-content {
+    border: none;
+    word-wrap: break-word;
+}
+/*-- 
+li.resp-tab-item.hor_1.resp-tab-active:after {
+    content: '';
+    position: absolute;
+    right: -18px;
+    top: 6px;
+    border-left: 1px solid #5AB1D0;
+    border-right: 0px solid #5AB1D0;
+    border-bottom: 1px solid #FFFFFF;
+    transform: rotate(134deg);
+    border-top: 1px solid #5AB1D0;
+    padding: 0 33px 33px 0px;
+}
+--*/
+
+.resp-vtabs li.resp-tab-active { 
+   position: relative;
+    z-index: 1;
+    margin-right: -1px ;
+    padding: 14px 15px 15px 14px ;
+//    border-top: 1px solid;
+//    border: 1px solid #CCCCCC ;
+//    border-left: 4px solid #F3C500 ;
+    margin-bottom: 4px ;
+//    border-right: 1px #FFF solid ;
+ //   background-color: #fff;
+}
+
+.resp-arrow {
+    width: 0;
+    height: 0;
+    float: right;
+    margin-top: 3px;
+    border-left: 6px solid transparent;
+    border-right: 6px solid transparent;
+    border-top: 12px solid #c1c1c1;
+}
+
+h2.resp-tab-active span.resp-arrow {
+    border: none;
+    border-left: 6px solid transparent;
+    border-right: 6px solid transparent;
+    border-bottom: 12px solid #9B9797;
+}
+
+/*-----------Accordion styles-----------*/
+h2.resp-tab-active {
+    background: #DBDBDB;/* ;*/
+}
+
+.resp-easy-accordion h2.resp-accordion {
+    display: block;
+}
+
+.resp-easy-accordion .resp-tab-content {
+    border: 1px solid #c1c1c1;
+}
+
+.resp-easy-accordion .resp-tab-content:last-child {
+    border-bottom: 1px solid #c1c1c1;/* ;*/
+}
+
+.resp-jfit {
+    width: 100%;
+    margin: 0px;
+}
+
+.resp-tab-content-active {
+    display: block;
+}
+
+h2.resp-accordion:first-child {
+    border-top: 1px solid #c1c1c1;/* ;*/
+}
+
+/*Here your can change the breakpoint to set the accordion, when screen resolution changed*/
+@media only screen and (max-width: 768px) {
+    ul.resp-tabs-list {
+        display: none;
+    }
+
+    h2.resp-accordion {
+        display: block;
+    }
+
+    .resp-vtabs .resp-tab-content {
+        border: 1px solid #C1C1C1;
+    }
+
+    .resp-vtabs .resp-tabs-container {
+        border: none;
+        float: none;
+        width: 100%;
+        min-height: 100px;
+        clear: none;
+    }
+
+    .resp-accordion-closed {
+        display: none ;
+    }
+
+    .resp-vtabs .resp-tab-content:last-child {
+        border-bottom: 1px solid #c1c1c1 ;
+    }
+}
+@media (max-width: 768px){
+	h2.resp-accordion {
+		font-size: 17px;
+		border: 1px solid #c1c1c1;
+		border-top: 0px solid #c1c1c1;
+		margin: 0px;
+		padding: 15px 15px;
+	}
+}

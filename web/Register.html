@@ -1,0 +1,185 @@
+
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>etail a Business Website</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/bootstrap-select.css">
+    <link href="css/style.css" rel="stylesheet" type="text/css" media="all" />
+    <!-- for-mobile-apps -->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta name="keywords" content="Resale Responsive web template, Bootstrap Web Templates, Flat Web Templates, Android Compatible web template, 
+      Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony Ericsson, Motorola web design" />
+    <script type="application/x-javascript"> addEventListener("load", function() { setTimeout(hideURLbar, 0); }, false); function hideURLbar(){ window.scrollTo(0,1); } </script>
+    <!-- //for-mobile-apps -->
+    <!--fonts-->
+    <link href='//fonts.googleapis.com/css?family=Ubuntu+Condensed' rel='stylesheet' type='text/css'>
+    <link href='//fonts.googleapis.com/css?family=Open+Sans:400,300,300italic,400italic,600,600italic,700,700italic,800,800italic' rel='stylesheet' type='text/css'>
+    <!--//fonts-->	
+    <!-- js -->
+    <script type="text/javascript" src="js/jquery.min.js"></script>
+    <!-- js -->
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/bootstrap-select.js"></script>
+    <script>
+      $(document).ready(function () {
+        var mySelect = $('#first-disabled2');
+      
+        $('#special').on('click', function () {
+          mySelect.find('option:selected').prop('disabled', true);
+          mySelect.selectpicker('refresh');
+        });
+      
+        $('#special2').on('click', function () {
+          mySelect.find('option:disabled').prop('disabled', false);
+          mySelect.selectpicker('refresh');
+        });
+      
+        $('#basic2').selectpicker({
+          liveSearch: true,
+          maxOptions: 1
+        });
+      });
+    </script>
+    <script type="text/javascript" src="js/jquery.leanModal.min.js"></script>
+    <link href="css/jquery.uls.css" rel="stylesheet"/>
+    <link href="css/jquery.uls.grid.css" rel="stylesheet"/>
+    <link href="css/jquery.uls.lcd.css" rel="stylesheet"/>
+    <!-- Source -->
+    <script src="js/jquery.uls.data.js"></script>
+    <script src="js/jquery.uls.data.utils.js"></script>
+    <script src="js/jquery.uls.lcd.js"></script>
+    <script src="js/jquery.uls.languagefilter.js"></script>
+    <script src="js/jquery.uls.regionfilter.js"></script>
+    <script src="js/jquery.uls.core.js"></script>
+    <script>
+      $( document ).ready( function() {
+      	$( '.uls-trigger' ).uls( {
+      		onSelect : function( language ) {
+      			var languageName = $.uls.data.getAutonym( language );
+      			$( '.uls-trigger' ).text( languageName );
+      		},
+      		quickList: ['en', 'hi', 'he', 'ml', 'ta', 'fr'] //FIXME
+      	} );
+      } );
+    </script>
+  </head>
+  <body style="background: #0000001c;">
+    <div class="header">
+      <div class="container">
+        <div class="logo">
+          <a href="Home.jsp"><span>e</span>tail</a>
+        </div>
+        <div class="header-right">
+          <a class="account" href="#">Join Us</a>
+        </div>
+      </div>
+    </div>
+    <section>
+      <div id="page-wrapper" class="sign-in-wrapper">
+          <div class="graphs" style="background-color: #0000001c;">
+          <div class="sign-in-form">
+            <div class="sign-in-form-top">
+            
+            </div>
+            <div class="signin">
+              
+              <form action ="Register" method="post">
+                  
+                  <div class="log-input">
+                  <div class="log-input-left">
+                    <input type="text" class="user" placeholder="Name"pattern=".{3,}" title="name must have 3 character"  name="name" required/>
+                  </div>
+                  
+                  <div class="clearfix"> </div>
+                </div>
+             
+                  
+                  
+                <div class="log-input">
+                  <div class="log-input-left">
+                    <input type="text" class="email" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,3}$" title="Email must be correct" placeholder="Your Email" name="email" required/>
+                    <div class="clearfix"> </div>
+                  </div>
+                  
+                  <div class="clearfix"> </div>
+                </div>
+                <div class="log-input">
+                  <div class="log-input-left">
+                    <input type="password" class="lock"  pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}" title="Must contain at least one number and one uppercase and lowercase letter, and at least 8 or more characters" placeholder="password" name="password" required/>
+                    <div class="clearfix"> </div>
+                  </div>
+                
+                  <div class="clearfix"> </div>
+                </div>
+                  
+                  
+                   <div class="log-input">
+                  <div class="log-input-left">
+                    <input type="text" class="user" placeholder="Mobile" pattern=".{5,}" title="mobile  must be correct"  name="phone" required/>
+                  </div>
+                  
+                  <div class="clearfix"> </div>
+                </div>
+                  
+                   <div class="log-input">
+                  <div class="log-input-left">
+                    <input type="text" class="user" placeholder="City" pattern=".{3,}" title="city name must be correct"  name="city" required/>
+                  </div>
+                  
+                  <div class="clearfix"> </div>
+                </div>
+                  
+                  
+                  
+               
+                 <div style="    height: 40px;
+    width: 426px;
+        text-align: center;
+    background: #f3c500;
+    padding: 10px;"> <a style="color:#fff; text-decoration:none; padding:7px; cursor: pointer; ">Choose Security Questions to Recover Password</a> </div>
+                 <div id="view"> 
+ <div class="log-input">
+                  <div class="log-input-left">
+                      <p>Enter your Nick Name <p>
+                    <input type="text" placeholder="Answer" name="Answer1" />
+                      <p>Enter your First School Name <p>
+                    <input type="text" placeholder="Answer" name="Answer2" />
+
+                  </div>
+                
+                  <div class="clearfix"> </div>
+                </div>
+</div>
+                <input type="submit" value="Sign Up" name="submit" style="margin:2.5em 0 0 22.5%; border-radius: 10px;">
+              </form>
+               
+            </div>
+         <footer class="diff"  style="position :relative;">
+        <p class="text-center" style="background-color: #00000000 !important;">&copy 2018 . All Rights Reserved | Design by <a href="#">Yogesh</a></p>
+      </footer>
+          </div>
+        </div>
+        
+      </div>
+      <!--footer section start-->
+     
+      
+     
+      <!--footer section end-->
+    </section>
+   
+  <script>
+$(document).ready(function()
+{
+    $("#view").hide();
+    $("a").click(function(){
+        $("#view").toggle();
+    });
+});
+</script>   
+      
+  </body>
+</html>
