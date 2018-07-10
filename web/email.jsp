@@ -31,9 +31,9 @@
         try{
             
             String host ="smtp.gmail.com" ;
-            String user = "yogeshch147@gmail.com";
+            String user = "email";
             String pass = "  ";
-            String to = "tk1234848@gmail.com";
+            String to = "receiver email";
             String from = "yogeshch147@gmail.com";
             String subject = "watch this carefully";
             String messageText = "CALL ME ! HURRY ";
