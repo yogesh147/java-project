@@ -17,10 +17,10 @@ public class EmailSend {
         try{
             
             String host ="smtp.gmail.com" ;
-            String user = "yogeshch147@gmail.com";
-            String pass = "yog456ESH";
-            String to = "tk1234848@gmail.com";
-            String from = "yogeshch147@gmail.com";
+            String user = "write your email";
+            String pass = "write your password";
+            String to = "abcd@gmail.com";
+            String from = "write your email";
             String subject = "watch this carefully";
             String messageText = "CALL ME ! HURRY ";
             boolean sessionDebug = false;
